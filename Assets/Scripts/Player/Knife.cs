@@ -39,4 +39,16 @@ public class Knife : MonoBehaviour
         knifeRb.velocity = Vector3.SmoothDamp(knifeRb.velocity * Time.deltaTime, targetVelocity, ref m_Velocity, MovementSmoothing);   
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            //Do damage
+            Destroy(collision.gameObject);
+        }
+
+    }
+
 }

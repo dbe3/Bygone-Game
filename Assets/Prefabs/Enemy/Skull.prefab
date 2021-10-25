@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 3678323336649036658}
   - component: {fileID: 3678323336649036659}
   - component: {fileID: 3678323336649036669}
-  - component: {fileID: 3678323336649036668}
   - component: {fileID: 8000427020617602926}
   m_Layer: 0
   m_Name: Skull
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1052259321
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 931481976068431447, guid: b9f6055889090d54e8779decfd50c0d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -105,18 +104,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3678323336649036668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3678323336649036657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ad17d51e11cbae45ba760eb80021fef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &8000427020617602926
 CircleCollider2D:
   m_ObjectHideFlags: 0
