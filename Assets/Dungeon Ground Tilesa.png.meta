@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: e8a66356cf30182468f1d95d8fe4c125
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1567010215434611073
+    second: Dungeon Ground Tilesa_0
+  - first:
+      213: -707788769012493848
+    second: Dungeon Ground Tilesa_1
+  - first:
+      213: 3741600781956035036
+    second: Dungeon Ground Tilesa_2
+  - first:
+      213: -8647699045488739281
+    second: Dungeon Ground Tilesa_3
+  - first:
+      213: -1297886385991591053
+    second: Dungeon Ground Tilesa_4
+  - first:
+      213: 7495503700332675371
+    second: Dungeon Ground Tilesa_5
+  - first:
+      213: 5484081743764391056
+    second: Dungeon Ground Tilesa_6
+  - first:
+      213: -1909226051877196899
+    second: Dungeon Ground Tilesa_7
+  - first:
+      213: 8351465404470805408
+    second: Dungeon Ground Tilesa_8
+  - first:
+      213: 7231002535064458416
+    second: Dungeon Ground Tilesa_9
+  - first:
+      213: 9030518621549170297
+    second: Dungeon Ground Tilesa_10
+  - first:
+      213: 5384304415959113432
+    second: Dungeon Ground Tilesa_11
+  - first:
+      213: 3991138014547206826
+    second: Dungeon Ground Tilesa_12
+  - first:
+      213: 7771668958148942838
+    second: Dungeon Ground Tilesa_13
+  - first:
+      213: -8488235085000942333
+    second: Dungeon Ground Tilesa_14
+  - first:
+      213: 7934696860990349921
+    second: Dungeon Ground Tilesa_15
+  - first:
+      213: 2460363779036231836
+    second: Dungeon Ground Tilesa_16
+  - first:
+      213: 5413765504406684193
+    second: Dungeon Ground Tilesa_17
+  - first:
+      213: -8389980730613923131
+    second: Dungeon Ground Tilesa_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18963621d732fb510800000000000000
+      internalID: 1567010215434611073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1dff65ddd6d26f0800000000000000
+      internalID: -707788769012493848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd130db5616dce330800000000000000
+      internalID: 3741600781956035036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cb82d19833df780800000000000000
+      internalID: -8647699045488739281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96.2
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bd72c553bfcfde0800000000000000
+      internalID: -1297886385991591053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96.2
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2184fe07e0650860800000000000000
+      internalID: 7495503700332675371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96.2
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09408404a4f5b1c40800000000000000
+      internalID: 5484081743764391056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96.2
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b20f575011185e0800000000000000
+      internalID: -1909226051877196899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65.2
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a34273998d56e370800000000000000
+      internalID: 8351465404470805408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 65.2
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b457708e7ea95460800000000000000
+      internalID: 7231002535064458416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 65.2
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e0dfe27d8d25d70800000000000000
+      internalID: 9030518621549170297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 65.2
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de5fcbc654e8ba40800000000000000
+      internalID: 5384304415959113432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34.2
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2e4a6d0ee536730800000000000000
+      internalID: 3991138014547206826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbd56acdb38adb60800000000000000
+      internalID: 7771668958148942838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 34.2
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dd28ca92bb33a80800000000000000
+      internalID: -8488235085000942333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 34.2
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162acb751c4bd1e60800000000000000
+      internalID: 7934696860990349921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.2000008
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9831bb42d7f42220800000000000000
+      internalID: 2460363779036231836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3.2000008
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1228c6bfa0f812b40800000000000000
+      internalID: 5413765504406684193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Ground Tilesa_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3.2000008
+        width: 32
+        height: 31.8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2826f3afcc09b80800000000000000
+      internalID: -8389980730613923131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
