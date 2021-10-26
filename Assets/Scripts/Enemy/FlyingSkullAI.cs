@@ -20,7 +20,6 @@ public class FlyingSkullAI : MonoBehaviour
     Seeker seeker;
     Rigidbody2D rb;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -76,11 +75,11 @@ public class FlyingSkullAI : MonoBehaviour
 
         if (rb.velocity.x >= 0.01f)
         {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+            transform.localScale = new Vector3(-1.3f, 1.3f, 1.3f);
         }
         else if (rb.velocity.x <= -0.01f)
         {
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
         }
     }
 }
