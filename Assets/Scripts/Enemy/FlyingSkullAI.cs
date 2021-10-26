@@ -77,11 +77,11 @@ public class FlyingSkullAI : MonoBehaviour
 
         if (force.x >= 0.01f)
         {
-            enemyGFX.localScale = new Vector3(-1f, 1f, 1f);
+            enemyGFX.localScale = new Vector3(-1.3f, 1.3f, 1.3f);
         }
         else if (force.x <= -0.01f)
         {
-            enemyGFX.localScale = new Vector3(1f, 1f, 1f);
+            enemyGFX.localScale = new Vector3(1.3f, 1.3f, 1.3f);
         }
     }
 }
