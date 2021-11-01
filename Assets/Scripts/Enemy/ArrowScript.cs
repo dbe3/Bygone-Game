@@ -20,12 +20,13 @@ public class ArrowScript : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
 
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("Player Hit");
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            playerHealth.Health--;
         }
 
+        Destroy(gameObject);
     }
 }

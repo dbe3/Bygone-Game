@@ -156,6 +156,8 @@ GameObject:
   - component: {fileID: 6133885702866913438}
   - component: {fileID: 6133885702866913410}
   - component: {fileID: 6133885702866913411}
+  - component: {fileID: 2011835859175697076}
+  - component: {fileID: 8114555724450331634}
   m_Layer: 0
   m_Name: SkelBowIdle_0
   m_TagString: Enemy
@@ -309,6 +311,35 @@ MonoBehaviour:
   rb: {fileID: 0}
   inAttackRange: 0
   left: 1
+  isDamaged: 0
+--- !u!114 &2011835859175697076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133885702866913436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e006489e3e4c74940b420bb2fafd60ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 0}
+  damagedColor: {r: 1, g: 0.53207546, b: 0.53207546, a: 1}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &8114555724450331634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133885702866913436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb2c4439d5dc3b4fa52d173aec89f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InvulTime: 1
 --- !u!1 &6133885703719456263
 GameObject:
   m_ObjectHideFlags: 0

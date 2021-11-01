@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 44835381}
   - component: {fileID: 44835380}
   - component: {fileID: 44835384}
+  - component: {fileID: 44835385}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -207,7 +208,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44835375}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.44, y: -0.92, z: 0}
+  m_LocalPosition: {x: -6.54, y: 0.32, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 423458634}
@@ -354,6 +355,19 @@ MonoBehaviour:
   playerController: {fileID: 44835381}
   anim: {fileID: 44835378}
   AttackCooldown: 0.5
+--- !u!114 &44835385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44835375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7acad314193dc0445b45f43c2d1266f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 3
 --- !u!1 &52192980
 GameObject:
   m_ObjectHideFlags: 0
@@ -71449,6 +71463,18 @@ PrefabInstance:
     - target: {fileID: 6133885702133123771, guid: 408e7e4d6c2d0f74aaa03b81ba7bdfdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133885702866913409, guid: 408e7e4d6c2d0f74aaa03b81ba7bdfdd, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133885702866913409, guid: 408e7e4d6c2d0f74aaa03b81ba7bdfdd, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133885702866913409, guid: 408e7e4d6c2d0f74aaa03b81ba7bdfdd, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 408e7e4d6c2d0f74aaa03b81ba7bdfdd, type: 3}

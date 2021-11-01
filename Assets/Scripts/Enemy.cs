@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
 
     public bool inAttackRange;
     public bool left;
+    public bool isDamaged;
 
     public void Start()
     {
