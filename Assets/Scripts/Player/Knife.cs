@@ -12,11 +12,13 @@ public class Knife : MonoBehaviour
     Vector3 targetVelocity;
 
     public PlayerController playerController;
+    public Transform player;
     int direction;
 
     public void Start()
     {
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
 
         if (playerController.facingRight)
         {
@@ -36,7 +38,11 @@ public class Knife : MonoBehaviour
 
     public void Update()
     {
-        knifeRb.velocity = Vector3.SmoothDamp(knifeRb.velocity * Time.deltaTime, targetVelocity, ref m_Velocity, MovementSmoothing);   
+        knifeRb.velocity = Vector3.SmoothDamp(knifeRb.velocity * Time.deltaTime, targetVelocity, ref m_Velocity, MovementSmoothing);
+        if (Vector3.Distance(player.position, knifeRb.position) >= 12)
+        {
+            Destroy(gameObject);
+        }   
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
