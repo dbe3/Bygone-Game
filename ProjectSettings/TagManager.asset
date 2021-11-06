@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Arrow
   - Ground
+  - LevelManager
   layers:
   - Default
   - TransparentFX

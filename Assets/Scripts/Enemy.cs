@@ -24,9 +24,13 @@ public class Enemy : MonoBehaviour
 
     public void DistanceChecker()
     {
-        if (Vector2.Distance(transform.position, Player.transform.position) <= AttackRange)
+        if (Vector2.Distance(transform.position, Player.transform.position) <= AttackRange && Mathf.Abs(transform.position.y - Player.transform.position.y) <= 1f)
         {
             inAttackRange = true;
+        }
+        else
+        {
+            inAttackRange = false;
         }
     }
 

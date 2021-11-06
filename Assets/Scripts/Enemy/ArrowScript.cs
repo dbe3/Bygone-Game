@@ -23,9 +23,10 @@ public class ArrowScript : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
+            Destroy(gameObject);
             PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
             playerHealth.Health--;
-            Destroy(gameObject);
+            
         }
 
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Enemy")
