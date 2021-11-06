@@ -47,7 +47,12 @@ public class Knife : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+
+        if (collision.gameObject.tag == "Ground")
+        {
+            Destroy(gameObject);
+        }
+        
 
         if (collision.gameObject.tag == "Enemy")
         {
@@ -59,7 +64,7 @@ public class Knife : MonoBehaviour
                 enemy.isDamaged = true;
                 Debug.Log(enemy.isDamaged);
             }
-            
+            Destroy(gameObject);
         }
 
     }

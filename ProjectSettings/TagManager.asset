@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Knife
   - Enemy
+  - Arrow
+  - Ground
   layers:
   - Default
   - TransparentFX
