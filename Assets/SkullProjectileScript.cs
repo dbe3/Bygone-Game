@@ -35,7 +35,6 @@ public class SkullProjectileScript : MonoBehaviour
     void Update()
     {
 
-
         standby = standby - (1 * Time.deltaTime);
 
         if (standby <= 0)

@@ -13,15 +13,16 @@ public class BossScript : MonoBehaviour
     public float Cooldown;
     public float currentTime;
 
-    [Header("Boss Movelist")]
-    public List<BossAttack> bossAttacks = new List<BossAttack>();
+    [Header("GameObjects")]
+    public GameObject Projectile;
+    public List<GameObject> Locations = new List<GameObject>();
 
     void Start()
     {
         anim = GetComponent<Animator>();
         currentTime = Cooldown;
         direction = -1;
-}
+    }
 
     void Update()
     {
@@ -36,34 +37,24 @@ public class BossScript : MonoBehaviour
             enemyScript.Flip();
             direction = 1;
         }
-
-        if (searchAttack == true)
-        {
-            attack = Random.Range(0, bossAttacks.Count);
-            bossAttacks[attack].PlayAnimation();
-            searchAttack = false;
-        }
-
-        if (searchAttack == false)
-        {
-            currentTime = currentTime - (1 * Time.deltaTime);
-
-            if (currentTime <= 0)
-            {
-                searchAttack = true;
-                currentTime = Cooldown;
-            }
-        }
-
     }
 
-    public void Attack()
+    public void SpawnSkull()
     {
-        bossAttacks[attack].Attack();
+        bool spawn = false;
+
+        if (spawn == false)
+        {
+            Vector2 shotLoc = new Vector2(transform.position.x + (1 * direction), transform.position.y);
+            GameObject projectileClone = Instantiate(Projectile, shotLoc, transform.rotation);
+            spawn = true;
+        }
+
     }
 
-    public void StopAnimation()
+    public void AttackDone()
     {
         anim.SetInteger("attack", -1);
+        anim.SetBool("attackDone", true);
     }
 }
