@@ -67,6 +67,12 @@ public class Knife : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (collision.gameObject.tag == "EnemyProjectile")
+        {
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
+
     }
 
 }
