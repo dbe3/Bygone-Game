@@ -6,19 +6,20 @@ public class LevelManager : MonoBehaviour
 {
     public Vector2 currentCheckpointPos;
     public GameObject player;
+    public GameObject firstSpawn;
+    public GameManager gm;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>(); 
+        Instantiate(player, gm.lastCp, transform.rotation);
+        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RespawnPlayer(Vector2 spawnPos)
     {
-        
-    }
-    public void RespawnPlayer()
-    {
-        player.transform.position = currentCheckpointPos;
+        //player.transform.position = currentCheckpointPos;
     }
 }

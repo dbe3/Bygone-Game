@@ -16,8 +16,10 @@ public class PlayerHealth : MonoBehaviour
     {
         if (Health <= 0)
         {
-            levelManager.RespawnPlayer();
-            Health = 3;
+            FindObjectOfType<GameManager>().EndGame();
+
+            //levelManager.RespawnPlayer();
+            //Health = 3;
         }
     }
 

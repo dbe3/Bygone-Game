@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 4695603402690482877}
   - component: {fileID: 3511506774193191951}
   - component: {fileID: 5128279060644663933}
+  - component: {fileID: -5010674592174015060}
   m_Layer: 0
   m_Name: ARROW
   m_TagString: Arrow
@@ -258,5 +259,20 @@ MonoBehaviour:
   direction: 1
   MovementSmoothing: 0.05
   targetVelocity: {x: 0, y: 0, z: 0}
-  arrowSpeed: 5
+  arrowSpeed: 10
   rb: {fileID: 3511506774193191951}
+  damagePlayer: {fileID: -5010674592174015060}
+--- !u!114 &-5010674592174015060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2653169280925950005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b75be236a3ea114a94d875ac11a7d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthUI: {fileID: 0}
+  ph: {fileID: 0}

@@ -12,6 +12,7 @@ public class ArrowScript : MonoBehaviour
     public float arrowSpeed = 5f;
 
     public Rigidbody2D rb;
+    public DamagePlayer damagePlayer;
 
     public void Update()
     {
@@ -24,9 +25,9 @@ public class ArrowScript : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Destroy(gameObject);
-            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-            playerHealth.Health--;
-            
+            GameObject player = collision.gameObject;
+            damagePlayer.ReducePlayerHealth(player);
+
         }
 
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Enemy")

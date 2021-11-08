@@ -52,7 +52,18 @@ public class Knife : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
+
+        if (collision.gameObject.tag == "Boss")
+        {
+            Enemy enemy =  collision.gameObject.GetComponentInChildren<Enemy>();
+
+            if (!enemy.isDamaged)
+            {
+                enemy.isDamaged = true;
+                Debug.Log(enemy.isDamaged);
+            }
+            Destroy(gameObject);
+        }
 
         if (collision.gameObject.tag == "Enemy")
         {

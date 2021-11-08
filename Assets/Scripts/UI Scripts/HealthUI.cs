@@ -5,24 +5,21 @@ using UnityEngine.UI;
 
 public class HealthUI : MonoBehaviour
 {
-    public Image HeartContainer;
+    public GameObject HeartContainer;
     public PlayerHealth playerHealth;
+    public RectTransform GridLayout;
+    public List<GameObject> Hearts = new List<GameObject>();
 
     public void Start()
     {
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
-    }
 
-    public void AddHealth()
-    {
-        for (int i = 0; i < playerHealth.Health; i++)
+        for (int i = 1; i <= playerHealth.Health; i++)
         {
-          
+            GameObject heart = Instantiate(HeartContainer);
+            heart.transform.parent = GridLayout;
+            Hearts.Add(heart);
         }
     }
 
-    public void ReduceHealth()
-    {
-
-    }
 }

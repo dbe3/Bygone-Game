@@ -60,5 +60,19 @@ public class SkullProjectileScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (col.gameObject.tag == "Player")
+        {
+            bool damageDealt = false;
+
+            if (damageDealt == false)
+            {
+                Destroy(gameObject);
+                PlayerHealth ph = col.gameObject.GetComponent<PlayerHealth>();
+                ph.Health--;
+                damageDealt = true;               
+            }
+
+        }
     }
 }
