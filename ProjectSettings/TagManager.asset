@@ -12,6 +12,7 @@ TagManager:
   - Boss
   - UI
   - GM
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX

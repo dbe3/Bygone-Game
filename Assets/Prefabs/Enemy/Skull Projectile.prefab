@@ -123,9 +123,10 @@ GameObject:
   - component: {fileID: 1868731535584249759}
   - component: {fileID: 2346286189812009222}
   - component: {fileID: 348802745196040081}
+  - component: {fileID: -1104443492126699870}
   m_Layer: 0
   m_Name: Skull Projectile
-  m_TagString: Enemy
+  m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -266,3 +267,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossScript: {fileID: 0}
+  damagePlayer: {fileID: -1104443492126699870}
+  canBeDestroyed: 0
+--- !u!114 &-1104443492126699870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8980876475532100165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b75be236a3ea114a94d875ac11a7d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthUI: {fileID: 0}
+  ph: {fileID: 0}

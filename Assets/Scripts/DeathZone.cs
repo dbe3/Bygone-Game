@@ -5,6 +5,7 @@ using UnityEngine;
 public class DeathZone : MonoBehaviour
 {
     public PlayerHealth player;
+
     // Start is called before the first frame update
     void Start()
     {
