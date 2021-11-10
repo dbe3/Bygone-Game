@@ -27,7 +27,7 @@ public class FlyingSkullAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         InvokeRepeating("UpdatePath", 0f, .5f);
     }
 

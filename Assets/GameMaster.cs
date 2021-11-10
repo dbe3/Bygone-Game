@@ -6,6 +6,7 @@ public class GameMaster : MonoBehaviour
 {
     private static GameMaster instance;
     public Vector2 lastCheckpointPos;
+    public GameObject Player;
 
     void Awake()
     {
@@ -24,4 +25,5 @@ public class GameMaster : MonoBehaviour
             lastCheckpointPos = new Vector2(-7, 0.53f);
         }
     }
+
 }

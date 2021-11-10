@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 6133885702866913411}
   - component: {fileID: 2011835859175697076}
   - component: {fileID: 8114555724450331634}
+  - component: {fileID: 5460929438452568684}
   m_Layer: 0
   m_Name: SkelBowIdle_0
   m_TagString: Enemy
@@ -312,6 +313,7 @@ MonoBehaviour:
   inAttackRange: 0
   left: 1
   isDamaged: 0
+  damagePlayer: {fileID: 5460929438452568684}
 --- !u!114 &2011835859175697076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,6 +342,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InvulTime: 0.5
+--- !u!114 &5460929438452568684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133885702866913436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b75be236a3ea114a94d875ac11a7d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthUI: {fileID: 0}
+  ph: {fileID: 0}
 --- !u!1 &6133885703719456263
 GameObject:
   m_ObjectHideFlags: 0

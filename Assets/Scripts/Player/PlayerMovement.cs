@@ -5,21 +5,24 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public PlayerController playerController;
-    float HorizontalMove = 0f;
+    public float HorizontalMove = 0f;
     public Animator anim;
     public float RunSpeed = 40f;
-    bool jump;
+    public bool jump;
 
     [SerializeField] LayerMask GroundLayer;
 
-    bool isGrounded = false;
+    public bool isGrounded = false;
     public Transform GroundCheckCollider;
     public float groundCheckRadius;
-
+    public bool canMove;
     void Update()
     {
 
-        HorizontalMove = Input.GetAxisRaw("Horizontal") * RunSpeed;
+        if (canMove == true)
+        {
+            HorizontalMove = Input.GetAxisRaw("Horizontal") * RunSpeed;
+        }
 
         GroundCheck();
 
@@ -40,8 +43,9 @@ public class PlayerMovement : MonoBehaviour
                 jump = true;
                 anim.SetBool("isJumping", true);
             }
-
         }
+
+
     }
 
     void FixedUpdate()

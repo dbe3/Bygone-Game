@@ -13,6 +13,11 @@ public class ArrowScript : MonoBehaviour
 
     public Rigidbody2D rb;
     public DamagePlayer damagePlayer;
+    KnockbackScript kb;
+
+    public void Start()
+    {
+    }
 
     public void Update()
     {
@@ -26,7 +31,9 @@ public class ArrowScript : MonoBehaviour
         {
             Destroy(gameObject);
             GameObject player = collision.gameObject;
+            kb = player.GetComponent<KnockbackScript>();
             damagePlayer.ReducePlayerHealth(player);
+            kb.Knockback(gameObject);
 
         }
 

@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public float AttackRange;
     public int Health;
     public Animator anim;
-
+    
     public GameObject Player;
 
     public float MoveSpeed;
@@ -16,6 +16,9 @@ public class Enemy : MonoBehaviour
     public bool inAttackRange;
     public bool left;
     public bool isDamaged;
+
+    KnockbackScript kb;
+    public DamagePlayer damagePlayer;
 
     public void Start()
     {
@@ -47,5 +50,13 @@ public class Enemy : MonoBehaviour
         Gizmos.color = Color.blue;
         Vector2 range = new Vector2(transform.position.x + (float)AttackRange, transform.position.y);
         Gizmos.DrawLine(transform.position, range);
+    }
+
+    public void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            damagePlayer.ReducePlayerHealth(col.gameObject);
+        }
     }
 }

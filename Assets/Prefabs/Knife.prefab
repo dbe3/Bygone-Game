@@ -338,6 +338,8 @@ MonoBehaviour:
   knifeSpeed: 15
   MovementSmoothing: 0.05
   playerController: {fileID: 0}
+  player: {fileID: 0}
+  ImpactEffect: {fileID: 8603016739813759694, guid: 5ec06b804d366ce448e3256664f03bde, type: 3}
 --- !u!61 &8421093663340003080
 BoxCollider2D:
   m_ObjectHideFlags: 0

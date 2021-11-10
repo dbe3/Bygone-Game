@@ -15,6 +15,8 @@ public class Knife : MonoBehaviour
     public Transform player;
     int direction;
 
+    public GameObject ImpactEffect;
+
     public void Start()
     {
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
@@ -47,6 +49,8 @@ public class Knife : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+
+        GameObject impactEffectClone = Instantiate(ImpactEffect, transform.position, transform.rotation);
 
         if (collision.gameObject.tag == "Ground")
         {

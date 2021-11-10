@@ -19,9 +19,12 @@ public class PlayerController : MonoBehaviour
     Vector3 facingDirection;
 
     public bool facingRight;
+    public int direction;
+
     private void Awake()
     {
         playerRb = GetComponent<Rigidbody2D>();
+        direction = 1;
     }
 
     public void Move(float move, bool jump)
@@ -34,10 +37,12 @@ public class PlayerController : MonoBehaviour
         if (move > 0 && !facingRight)
         {
             Flip();
+            direction = 1;
         }
         else if (move < 0 && facingRight)
         {
             Flip();
+            direction = -1;
         }
 
         if (move != 0)
