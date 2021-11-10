@@ -17,11 +17,14 @@ public class BossScript : MonoBehaviour
     public GameObject Projectile;
     public List<GameObject> Locations = new List<GameObject>();
 
+    bool lowHp;
+
     void Start()
     {
         anim = GetComponent<Animator>();
         currentTime = Cooldown;
         direction = -1;
+        lowHp = false;
     }
 
     void Update()
@@ -36,6 +39,11 @@ public class BossScript : MonoBehaviour
         {
             enemyScript.Flip();
             direction = 1;
+        }
+
+        if (enemyScript.Health <= enemyScript.Health / 2)
+        {
+            lowHp = true;
         }
     }
 
@@ -56,5 +64,10 @@ public class BossScript : MonoBehaviour
     {
         anim.SetInteger("attack", -1);
         anim.SetBool("attackDone", true);
+    }
+
+    public void SummonSkull()
+    {
+
     }
 }

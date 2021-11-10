@@ -7,11 +7,15 @@ public class BossIdleScript : StateMachineBehaviour
     public int Cooldown;
     public float Timer;
     public bool attackSet;
+    public Enemy enemyScript;
+    public bool hpLow;
+    public bool skullsSummoned;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         attackSet = false;
         Timer = Cooldown;
+        enemyScript = animator.gameObject.GetComponent<Enemy>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -27,9 +31,14 @@ public class BossIdleScript : StateMachineBehaviour
             }
         }
 
+        if (enemyScript.Health <= enemyScript.Health / 2)
+        {
+            hpLow = true;
+        }
+
         if (attackSet == true)
         {
-            int attack = Random.Range(0, 0);
+            int attack = 0;
             animator.SetInteger("attack", attack);
         }
     }
