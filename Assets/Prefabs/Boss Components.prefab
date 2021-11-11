@@ -1,5 +1,65 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &314228066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 314228067}
+  m_Layer: 0
+  m_Name: SkullSpawnLoc2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &314228067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314228066}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: -0.57, z: 4.6594167}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4381019180236862771}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &717950077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 717950078}
+  m_Layer: 0
+  m_Name: SkullSpawnLoc1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &717950078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717950077}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.37, y: -0.57, z: 4.6594167}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4381019180236862771}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4381019179839563480
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,6 +122,8 @@ Transform:
   - {fileID: 4381019181357154646}
   - {fileID: 4381019180796324410}
   - {fileID: 1642783361690244872}
+  - {fileID: 717950078}
+  - {fileID: 314228067}
   m_Father: {fileID: 9078441151474430755}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -179,7 +241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5214354292137431572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.21, y: 3.15, z: 0}
+  m_LocalPosition: {x: -4.21, y: 3.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4381019180236862771}
@@ -202,6 +264,7 @@ GameObject:
   - component: {fileID: 9078441151362077606}
   - component: {fileID: 9078441151362077628}
   - component: {fileID: 9078441151362077629}
+  - component: {fileID: 317942742}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -307,7 +370,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -363,7 +426,7 @@ MonoBehaviour:
   inAttackRange: 0
   left: 1
   isDamaged: 0
-  damagePlayer: {fileID: 0}
+  damagePlayer: {fileID: 317942742}
 --- !u!114 &9078441151362077606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,11 +446,21 @@ MonoBehaviour:
   Cooldown: 5
   currentTime: 0
   Projectile: {fileID: 8980876475532100165, guid: 2aa9d2e736291754e80d679dc4d0a781, type: 3}
+  SkelBow: {fileID: 6133885702133123768, guid: 408e7e4d6c2d0f74aaa03b81ba7bdfdd, type: 3}
   Locations:
   - {fileID: 4381019179839563480}
   - {fileID: 4381019180867530722}
   - {fileID: 4381019181357154641}
   - {fileID: 4381019180796324405}
+  Center: {fileID: 5214354292137431572}
+  SkullSpawn1: {fileID: 717950077}
+  SkullSpawn2: {fileID: 314228066}
+  lowHp: 0
+  spawnCenter: 0
+  hasSpawnedCenter: 0
+  skullSummoned: 0
+  isDead: 0
+  TBC: {fileID: 184264419093604799, guid: 347c6458e3d1aac4da3dd51fc1d37949, type: 3}
 --- !u!114 &9078441151362077628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +489,21 @@ MonoBehaviour:
   rend: {fileID: 0}
   damagedColor: {r: 1, g: 0, b: 0, a: 1}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &317942742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9078441151362077631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b75be236a3ea114a94d875ac11a7d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthUI: {fileID: 0}
+  ph: {fileID: 0}
+  kb: {fileID: 0}
 --- !u!1 &9078441151369251277
 GameObject:
   m_ObjectHideFlags: 0

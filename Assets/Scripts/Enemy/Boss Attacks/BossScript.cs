@@ -12,12 +12,21 @@ public class BossScript : MonoBehaviour
     [Header("Timer")]
     public float Cooldown;
     public float currentTime;
-
+    
     [Header("GameObjects")]
     public GameObject Projectile;
+    public GameObject SkelBow;
     public List<GameObject> Locations = new List<GameObject>();
-
-    bool lowHp;
+    public GameObject Center;
+    public GameObject SkullSpawn1;
+    public GameObject SkullSpawn2;
+    public bool lowHp;
+    public bool spawnCenter;
+    public bool hasSpawnedCenter;
+    public bool skullSummoned;
+    int MaxHealth;
+    public bool isDead;
+    public GameObject TBC;
 
     void Start()
     {
@@ -25,10 +34,12 @@ public class BossScript : MonoBehaviour
         currentTime = Cooldown;
         direction = -1;
         lowHp = false;
+        MaxHealth = enemyScript.Health;
     }
 
     void Update()
     {
+
         //Sprite Flip
         if (transform.position.x - enemyScript.Player.transform.position.x > 0 && !enemyScript.left)
         {
@@ -41,9 +52,16 @@ public class BossScript : MonoBehaviour
             direction = 1;
         }
 
-        if (enemyScript.Health <= enemyScript.Health / 2)
+        if (enemyScript.Health <= MaxHealth / 2)
         {
             lowHp = true;
+            spawnCenter = true;
+        }
+
+        if (enemyScript.Health <= 0)
+        {
+            isDead = true;
+            Debug.Log("Boss Dead");
         }
     }
 
@@ -68,6 +86,10 @@ public class BossScript : MonoBehaviour
 
     public void SummonSkull()
     {
+        Vector2 Spawn1 = new Vector2(SkullSpawn1.transform.position.x, SkullSpawn1.transform.position.y); 
+        Vector2 Spawn2 = new Vector2(SkullSpawn2.transform.position.x, SkullSpawn2.transform.position.y);
 
+        GameObject skullClone1 = Instantiate(SkelBow, Spawn1, transform.rotation);
+        GameObject skullClone2 = Instantiate(SkelBow, Spawn2, transform.rotation);
     }
 }

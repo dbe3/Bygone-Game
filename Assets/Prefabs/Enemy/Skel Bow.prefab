@@ -291,7 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Arrow: {fileID: 2653169280925950005, guid: 524ed3e5ec45f204c8849709d7803e18, type: 3}
   enemyScript: {fileID: 0}
-  attackCooldown: 2
+  attackCooldown: 1.5
 --- !u!114 &6133885702866913411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,6 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthUI: {fileID: 0}
   ph: {fileID: 0}
+  kb: {fileID: 0}
 --- !u!1 &6133885703719456263
 GameObject:
   m_ObjectHideFlags: 0

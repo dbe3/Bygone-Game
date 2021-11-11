@@ -314,6 +314,7 @@ MonoBehaviour:
   inAttackRange: 0
   left: 1
   isDamaged: 0
+  damagePlayer: {fileID: 0}
 --- !u!114 &4697706977449820211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,8 +333,16 @@ MonoBehaviour:
   direction: 0
   Cooldown: 5
   currentTime: 0
-  bossAttacks:
-  - {fileID: 4697706977803963001}
+  Projectile: {fileID: 0}
+  SkelBow: {fileID: 0}
+  Locations: []
+  Center: {fileID: 0}
+  SkullSpawn1: {fileID: 0}
+  SkullSpawn2: {fileID: 0}
+  lowHp: 0
+  spawnCenter: 0
+  hasSpawnedCenter: 0
+  skullSummoned: 0
 --- !u!1 &4697706977496121803
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,3 +451,4 @@ MonoBehaviour:
   bossScript: {fileID: 4697706977449820211}
   anim: {fileID: 4697706977449820207}
   Projectile: {fileID: 8980876475532100165, guid: 2aa9d2e736291754e80d679dc4d0a781, type: 3}
+  ShootLoc: {fileID: 0}

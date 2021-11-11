@@ -16,6 +16,9 @@ public class PlayerDamageSprite : MonoBehaviour
     [SerializeField]
     private Color normalColor = Color.white;
 
+    [SerializeField]
+    private Color deadColor = Color.white;
+
     public void Start()
     {
         ph = GetComponent<PlayerHealth>();
@@ -52,6 +55,11 @@ public class PlayerDamageSprite : MonoBehaviour
             sr.color = normalColor;
             transparent = false;
             timer = 0;
+        }
+
+        if (ph.Health <= 0)
+        {
+            sr.color = deadColor;
         }
     }
 }

@@ -8,14 +8,25 @@ public class BossIdleScript : StateMachineBehaviour
     public float Timer;
     public bool attackSet;
     public Enemy enemyScript;
-    public bool hpLow;
-    public bool skullsSummoned;
+    BossScript bs;
+
+    int attack;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         attackSet = false;
-        Timer = Cooldown;
+        bs = animator.gameObject.GetComponent<BossScript>();
+
+        if (bs.lowHp == true)
+        {
+            Timer = 1.5f;
+        }
+        else
+        {
+            Timer = Cooldown;
+        }
         enemyScript = animator.gameObject.GetComponent<Enemy>();
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -31,15 +42,32 @@ public class BossIdleScript : StateMachineBehaviour
             }
         }
 
-        if (enemyScript.Health <= enemyScript.Health / 2)
-        {
-            hpLow = true;
-        }
-
         if (attackSet == true)
         {
-            int attack = 0;
+
+            if (bs.skullSummoned == false)
+            {
+                attack = 0;
+            }
+
+            if (bs.lowHp == true)
+            {
+                bs.skullSummoned = true;
+
+                if (bs.skullSummoned == true && bs.hasSpawnedCenter == false)
+                {
+                    animator.SetBool("attackDone", true);
+                    attack = 1;
+                }
+                else
+                {
+                    attack = 0;
+                }           
+
+            }
+
             animator.SetInteger("attack", attack);
+
         }
     }
 
