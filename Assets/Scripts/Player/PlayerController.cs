@@ -21,10 +21,27 @@ public class PlayerController : MonoBehaviour
     public bool facingRight;
     public int direction;
 
+    public float AttackCooldown;
+    float Timer;
+    public bool canAttack;
+
     private void Awake()
     {
         playerRb = GetComponent<Rigidbody2D>();
         direction = 1;
+    }
+
+    public void Update()
+    {
+        if (!canAttack)
+        {
+            Timer = Timer - (1 * Time.deltaTime);
+
+            if (Timer <= 0)
+            {
+                canAttack = true;
+            }
+        }
     }
 
     public void Move(float move, bool jump)
@@ -63,8 +80,13 @@ public class PlayerController : MonoBehaviour
 
     public void Attack()
     {
-        GameObject projectile = Instantiate(Knife, ShootLocation.position, transform.rotation);
-        anim.SetBool("isAttacking", true);
+        if (canAttack == true)
+        {
+            GameObject projectile = Instantiate(Knife, ShootLocation.position, transform.rotation);
+            anim.SetBool("isAttacking", true);
+            Timer = AttackCooldown;
+            canAttack = false;
+        }
     }
 
     public void Flip()

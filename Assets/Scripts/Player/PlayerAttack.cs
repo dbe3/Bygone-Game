@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Update()
     {
-
+        /*
         if (Input.GetMouseButtonDown(0))
         {
             if (canAttack)
@@ -33,6 +33,7 @@ public class PlayerAttack : MonoBehaviour
                 canAttack = true;
             }
         }
+        */
     }
 
     public void DoneAttacking()
