@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackRange: 5
-  Health: 3
+  Health: 1
   anim: {fileID: 6133885702866913439}
   Player: {fileID: 0}
   MoveSpeed: 0
